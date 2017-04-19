@@ -1,0 +1,961 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/ded/bowser">bowser (v1.6.1)</a>
+</h1>
+<h4>Lightweight browser detector</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bowser">module bowser</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">bowser.</span>x</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser._detect">
+            function <span class="apidocSignatureSpan">bowser.</span>_detect
+            <span class="apidocSignatureSpan">(ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.check">
+            function <span class="apidocSignatureSpan">bowser.</span>check
+            <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.compareVersions">
+            function <span class="apidocSignatureSpan">bowser.</span>compareVersions
+            <span class="apidocSignatureSpan">(versions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.isUnsupportedBrowser">
+            function <span class="apidocSignatureSpan">bowser.</span>isUnsupportedBrowser
+            <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.test">
+            function <span class="apidocSignatureSpan">bowser.</span>test
+            <span class="apidocSignatureSpan">(browserList)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan"></span>bowser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bowser.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bowser.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bowser.bowser">module bowser.bowser</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">bowser.bowser.</span>x</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.bowser._detect">
+            function <span class="apidocSignatureSpan">bowser.bowser.</span>_detect
+            <span class="apidocSignatureSpan">(ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.bowser.check">
+            function <span class="apidocSignatureSpan">bowser.bowser.</span>check
+            <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.bowser.compareVersions">
+            function <span class="apidocSignatureSpan">bowser.bowser.</span>compareVersions
+            <span class="apidocSignatureSpan">(versions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.bowser.isUnsupportedBrowser">
+            function <span class="apidocSignatureSpan">bowser.bowser.</span>isUnsupportedBrowser
+            <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bowser.bowser.test">
+            function <span class="apidocSignatureSpan">bowser.bowser.</span>test
+            <span class="apidocSignatureSpan">(browserList)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bowser.bowser.</span>name</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">bowser.bowser.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bowser" id="apidoc.module.bowser">module bowser</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser._detect" id="apidoc.element.bowser._detect">
+        function <span class="apidocSignatureSpan">bowser.</span>_detect
+        <span class="apidocSignatureSpan">(ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detect(ua) {
+
+  function getFirstMatch(regex) {
+    var match = ua.match(regex);
+    return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[1]) || '';
+  }
+
+  function getSecondMatch(regex) {
+    var match = ua.match(regex);
+    return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[2]) || '';
+  }
+
+  var iosdevice = getFirstMatch(/(ipod|iphone|ipad)/i).toLowerCase()
+    , likeAndroid = /like android/i.test(ua)
+    , android = !likeAndroid &amp;&amp; /android/i.test(ua)
+    , nexusMobile = /nexus\s*[0-6]\s*/i.test(ua)
+    , nexusTablet = !nexusMobile &amp;&amp; /nexus\s*[0-9]+/i.test(ua)
+    , chromeos = /CrOS/.test(ua)
+    , silk = /silk/i.test(ua)
+    , sailfish = /sailfish/i.test(ua)
+    , tizen = /tizen/i.test(ua)
+    , webos = /(web|hpw)os/i.test(ua)
+    , windowsphone = /windows phone/i.test(ua)
+    , samsungBrowser = /SamsungBrowser/i.test(ua)
+    , windows = !windowsphone &amp;&amp; /windows/i.test(ua)
+    , mac = !iosdevice &amp;&amp; !silk &amp;&amp; /macintosh/i.test(ua)
+    , linux = !android &amp;&amp; !sailfish &amp;&amp; !tizen &amp;&amp; !webos &amp;&amp; /linux/i.test(ua)
+    , edgeVersion = getFirstMatch(/edge\/(\d+(\.\d+)?)/i)
+    , versionIdentifier = getFirstMatch(/version\/(\d+(\.\d+)?)/i)
+    , tablet = /tablet/i.test(ua)
+    , mobile = !tablet &amp;&amp; /[^-]mobi/i.test(ua)
+    , xbox = /xbox/i.test(ua)
+    , result
+
+  if (/opera/i.test(ua)) {
+    //  an old Opera
+    result = {
+      name: 'Opera'
+    , opera: t
+    , version: versionIdentifier || getFirstMatch(/(?:opera|opr|opios)[\s\/](\d+(\.\d+)?)/i)
+    }
+  } else if (/opr|opios/i.test(ua)) {
+    // a new Opera
+    result = {
+      name: 'Opera'
+      , opera: t
+      , version: getFirstMatch(/(?:opr|opios)[\s\/](\d+(\.\d+)?)/i) || versionIdentifier
+    }
+  }
+  else if (/SamsungBrowser/i.test(ua)) {
+    result = {
+      name: 'Samsung Internet for Android'
+      , samsungBrowser: t
+      , version: versionIdentifier || getFirstMatch(/(?:SamsungBrowser)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/coast/i.test(ua)) {
+    result = {
+      name: 'Opera Coast'
+      , coast: t
+      , version: versionIdentifier || getFirstMatch(/(?:coast)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/yabrowser/i.test(ua)) {
+    result = {
+      name: 'Yandex Browser'
+    , yandexbrowser: t
+    , version: versionIdentifier || getFirstMatch(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/ucbrowser/i.test(ua)) {
+    result = {
+        name: 'UC Browser'
+      , ucbrowser: t
+      , version: getFirstMatch(/(?:ucbrowser)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/mxios/i.test(ua)) {
+    result = {
+      name: 'Maxthon'
+      , maxthon: t
+      , version: getFirstMatch(/(?:mxios)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/epiphany/i.test(ua)) {
+    result = {
+      name: 'Epiphany'
+      , epiphany: t
+      , version: getFirstMatch(/(?:epiphany)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/puffin/i.test(ua)) {
+    result = {
+      name: 'Puffin'
+      , puffin: t
+      , version: getFirstMatch(/(?:puffin)[\s\/](\d+(?:\.\d+)?)/i)
+    }
+  }
+  else if (/sleipnir/i.test(ua)) {
+    result = {
+      name: 'Sleipnir'
+      , sleipnir: t
+      , version: getFirstMatch(/(?:sleipnir)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/k-meleon/i.test(ua)) {
+    result = {
+      name: 'K-Meleon'
+      , kMeleon: t
+      , version: getFirstMatch(/(?:k-meleon)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (windowsphone) {
+    result = {
+      name: 'Windows Phone'
+    , windowsphone: t
+    }
+    if (edgeVersion) {
+      result.msedge = t
+      result.version = edgeVersion
+    }
+    else {
+      result.msie = t
+      result.version = getFirstMatch(/iemobile\/(\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/msie|trident/i.test(ua)) {
+    result = {
+      name: 'Internet Explorer'
+    , msie: t
+    , version: getFirstMatch(/(?:msie |rv:)(\d+(\.\d+)?)/i)
+    }
+  } else if (chromeos) {
+    result = {
+      name: 'Chrome'
+    , chromeos: t
+    , chromeBook: t
+    , chrome: t
+    , version: getFirstMatch(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)
+    }
+  } else if (/chrome.+? edge/i.test(ua)) {
+    result = {
+      name: 'Microsoft Edge'
+    , msedge: t
+    , version: edgeVersion
+    } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+---
+
+## API
+
+### bowser`:Object`
+Use it to get object with detected flags of your current browser.
+
+### bowser.<span class="apidocCodeKeywordSpan">_detect</span>(ua `:String`)`:Object`
+Use it to get object with detected flags from User Agent string.
+
+### bowser.check(minVersions`:Object`, strictMode`:Boolean`, [ua]`:String`)`:Boolean`
+Use it to check if browser is supported. In default non-strict mode any browser family not present in `minVersions` will pass the
+ check (like Chrome in the third call in the sample bellow). When strict mode is enabled then any not specified browser family in
+ `minVersions` will cause `check` to return `false` (in the sample it is the fourth call, the last one).
+
+``` js
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.check" id="apidoc.element.bowser.check">
+        function <span class="apidocSignatureSpan">bowser.</span>check
+        <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function check(minVersions, strictMode, ua) {
+  return !isUnsupportedBrowser(minVersions, strictMode, ua);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### bowser`:Object`
+Use it to get object with detected flags of your current browser.
+
+### bowser._detect(ua `:String`)`:Object`
+Use it to get object with detected flags from User Agent string.
+
+### bowser.<span class="apidocCodeKeywordSpan">check</span>(minVersions`:Object`, strictMode`:Boolean`, [ua]`:String`)`:Boolean`
+Use it to check if browser is supported. In default non-strict mode any browser family not present in `minVersions` will pass the
+ check (like Chrome in the third call in the sample bellow). When strict mode is enabled then any not specified browser family in
+ `minVersions` will cause `check` to return `false` (in the sample it is the fourth call, the last one).
+
+``` js
+/**
+ * in case of using IE10
+ */
+bowser.check({msie: "11"});  // true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.compareVersions" id="apidoc.element.bowser.compareVersions">
+        function <span class="apidocSignatureSpan">bowser.</span>compareVersions
+        <span class="apidocSignatureSpan">(versions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compareVersions(versions) {
+  // 1) get common precision for both versions, for example for "10.0" and "9" it should be 2
+  var precision = Math.max(getVersionPrecision(versions[0]), getVersionPrecision(versions[1]));
+  var chunks = map(versions, function (version) {
+    var delta = precision - getVersionPrecision(version);
+
+    // 2) "9" -&gt; "9.0" (for precision = 2)
+    version = version + new Array(delta + 1).join(".0");
+
+    // 3) "9.0" -&gt; ["000000000"", "000000009"]
+    return map(version.split("."), function (chunk) {
+      return new Array(20 - chunk.length).join("0") + chunk;
+    }).reverse();
+  });
+
+  // iterate in reverse order by reversed chunks array
+  while (--precision &gt;= 0) {
+    // 4) compare: "000000009" &gt; "000000010" = false (but "9" &gt; "10" = true)
+    if (chunks[0][precision] &gt; chunks[1][precision]) {
+      return 1;
+    }
+    else if (chunks[0][precision] === chunks[1][precision]) {
+      if (precision === 0) {
+        // all version chunks are same
+        return 0;
+      }
+    }
+    else {
+      return -1;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+ * but false in strict mode
+ */
+bowser.check({chrome: "45"}, true, window.navigator.userAgent); // false
+```
+
+### bowser.<span class="apidocCodeKeywordSpan">compareVersions</span>(versions`:Array&lt;String&gt;`)`:Number`
+Use it to compare two versions.
+
+``` js
+bowser.compareVersions(['9.0', '10']);
+// -1
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.isUnsupportedBrowser" id="apidoc.element.bowser.isUnsupportedBrowser">
+        function <span class="apidocSignatureSpan">bowser.</span>isUnsupportedBrowser
+        <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUnsupportedBrowser(minVersions, strictMode, ua) {
+  var _bowser = bowser;
+
+  // make strictMode param optional with ua param usage
+  if (typeof strictMode === 'string') {
+    ua = strictMode;
+    strictMode = void(0);
+  }
+
+  if (strictMode === void(0)) {
+    strictMode = false;
+  }
+  if (ua) {
+    _bowser = detect(ua);
+  }
+
+  var version = "" + _bowser.version;
+  for (var browser in minVersions) {
+    if (minVersions.hasOwnProperty(browser)) {
+      if (_bowser[browser]) {
+        if (typeof minVersions[browser] !== 'string') {
+          throw new Error('Browser version in the minVersion map should be a string: ' + browser + ': ' + String(minVersions));
+        }
+
+        // browser version and min supported version.
+        return compareVersions([version, minVersions[browser]]) &lt; 0;
+      }
+    }
+  }
+
+  return strictMode; // not found
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Use it to compare two versions.
+
+``` js
+bowser.compareVersions(['9.0', '10']);
+// -1
+```
+
+### bowser.<span class="apidocCodeKeywordSpan">isUnsupportedBrowser</span>(minVersions`:Object`, [strictMode]`:Boolean`, [ua]`:string
+`)`:Boolean`
+Use it to check if browser is unsupported.
+
+``` js
+bowser.isUnsupportedBrowser({msie: "10"}, window.navigator.userAgent);
+// true / false
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.test" id="apidoc.element.bowser.test">
+        function <span class="apidocSignatureSpan">bowser.</span>test
+        <span class="apidocSignatureSpan">(browserList)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">test = function (browserList) {
+  for (var i = 0; i &lt; browserList.length; ++i) {
+    var browserItem = browserList[i];
+    if (typeof browserItem=== 'string') {
+      if (browserItem in bowser) {
+        return true;
+      }
+    }
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function getSecondMatch(regex) {
+  var match = ua.match(regex);
+  return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[2]) || '';
+}
+
+var iosdevice = getFirstMatch(/(ipod|iphone|ipad)/i).toLowerCase()
+  , likeAndroid = /like android/i.<span class="apidocCodeKeywordSpan">test</span>(ua)
+  , android = !likeAndroid &amp;&amp; /android/i.test(ua)
+  , nexusMobile = /nexus\s*[0-6]\s*/i.test(ua)
+  , nexusTablet = !nexusMobile &amp;&amp; /nexus\s*[0-9]+/i.test(ua)
+  , chromeos = /CrOS/.test(ua)
+  , silk = /silk/i.test(ua)
+  , sailfish = /sailfish/i.test(ua)
+  , tizen = /tizen/i.test(ua)
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bowser.bowser" id="apidoc.module.bowser.bowser">module bowser.bowser</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.bowser._detect" id="apidoc.element.bowser.bowser._detect">
+        function <span class="apidocSignatureSpan">bowser.bowser.</span>_detect
+        <span class="apidocSignatureSpan">(ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detect(ua) {
+
+  function getFirstMatch(regex) {
+    var match = ua.match(regex);
+    return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[1]) || '';
+  }
+
+  function getSecondMatch(regex) {
+    var match = ua.match(regex);
+    return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[2]) || '';
+  }
+
+  var iosdevice = getFirstMatch(/(ipod|iphone|ipad)/i).toLowerCase()
+    , likeAndroid = /like android/i.test(ua)
+    , android = !likeAndroid &amp;&amp; /android/i.test(ua)
+    , nexusMobile = /nexus\s*[0-6]\s*/i.test(ua)
+    , nexusTablet = !nexusMobile &amp;&amp; /nexus\s*[0-9]+/i.test(ua)
+    , chromeos = /CrOS/.test(ua)
+    , silk = /silk/i.test(ua)
+    , sailfish = /sailfish/i.test(ua)
+    , tizen = /tizen/i.test(ua)
+    , webos = /(web|hpw)os/i.test(ua)
+    , windowsphone = /windows phone/i.test(ua)
+    , samsungBrowser = /SamsungBrowser/i.test(ua)
+    , windows = !windowsphone &amp;&amp; /windows/i.test(ua)
+    , mac = !iosdevice &amp;&amp; !silk &amp;&amp; /macintosh/i.test(ua)
+    , linux = !android &amp;&amp; !sailfish &amp;&amp; !tizen &amp;&amp; !webos &amp;&amp; /linux/i.test(ua)
+    , edgeVersion = getFirstMatch(/edge\/(\d+(\.\d+)?)/i)
+    , versionIdentifier = getFirstMatch(/version\/(\d+(\.\d+)?)/i)
+    , tablet = /tablet/i.test(ua)
+    , mobile = !tablet &amp;&amp; /[^-]mobi/i.test(ua)
+    , xbox = /xbox/i.test(ua)
+    , result
+
+  if (/opera/i.test(ua)) {
+    //  an old Opera
+    result = {
+      name: 'Opera'
+    , opera: t
+    , version: versionIdentifier || getFirstMatch(/(?:opera|opr|opios)[\s\/](\d+(\.\d+)?)/i)
+    }
+  } else if (/opr|opios/i.test(ua)) {
+    // a new Opera
+    result = {
+      name: 'Opera'
+      , opera: t
+      , version: getFirstMatch(/(?:opr|opios)[\s\/](\d+(\.\d+)?)/i) || versionIdentifier
+    }
+  }
+  else if (/SamsungBrowser/i.test(ua)) {
+    result = {
+      name: 'Samsung Internet for Android'
+      , samsungBrowser: t
+      , version: versionIdentifier || getFirstMatch(/(?:SamsungBrowser)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/coast/i.test(ua)) {
+    result = {
+      name: 'Opera Coast'
+      , coast: t
+      , version: versionIdentifier || getFirstMatch(/(?:coast)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/yabrowser/i.test(ua)) {
+    result = {
+      name: 'Yandex Browser'
+    , yandexbrowser: t
+    , version: versionIdentifier || getFirstMatch(/(?:yabrowser)[\s\/](\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/ucbrowser/i.test(ua)) {
+    result = {
+        name: 'UC Browser'
+      , ucbrowser: t
+      , version: getFirstMatch(/(?:ucbrowser)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/mxios/i.test(ua)) {
+    result = {
+      name: 'Maxthon'
+      , maxthon: t
+      , version: getFirstMatch(/(?:mxios)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/epiphany/i.test(ua)) {
+    result = {
+      name: 'Epiphany'
+      , epiphany: t
+      , version: getFirstMatch(/(?:epiphany)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/puffin/i.test(ua)) {
+    result = {
+      name: 'Puffin'
+      , puffin: t
+      , version: getFirstMatch(/(?:puffin)[\s\/](\d+(?:\.\d+)?)/i)
+    }
+  }
+  else if (/sleipnir/i.test(ua)) {
+    result = {
+      name: 'Sleipnir'
+      , sleipnir: t
+      , version: getFirstMatch(/(?:sleipnir)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (/k-meleon/i.test(ua)) {
+    result = {
+      name: 'K-Meleon'
+      , kMeleon: t
+      , version: getFirstMatch(/(?:k-meleon)[\s\/](\d+(?:\.\d+)+)/i)
+    }
+  }
+  else if (windowsphone) {
+    result = {
+      name: 'Windows Phone'
+    , windowsphone: t
+    }
+    if (edgeVersion) {
+      result.msedge = t
+      result.version = edgeVersion
+    }
+    else {
+      result.msie = t
+      result.version = getFirstMatch(/iemobile\/(\d+(\.\d+)?)/i)
+    }
+  }
+  else if (/msie|trident/i.test(ua)) {
+    result = {
+      name: 'Internet Explorer'
+    , msie: t
+    , version: getFirstMatch(/(?:msie |rv:)(\d+(\.\d+)?)/i)
+    }
+  } else if (chromeos) {
+    result = {
+      name: 'Chrome'
+    , chromeos: t
+    , chromeBook: t
+    , chrome: t
+    , version: getFirstMatch(/(?:chrome|crios|crmo)\/(\d+(\.\d+)?)/i)
+    }
+  } else if (/chrome.+? edge/i.test(ua)) {
+    result = {
+      name: 'Microsoft Edge'
+    , msedge: t
+    , version: edgeVersion
+    } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+---
+
+## API
+
+### bowser`:Object`
+Use it to get object with detected flags of your current browser.
+
+### bowser.<span class="apidocCodeKeywordSpan">_detect</span>(ua `:String`)`:Object`
+Use it to get object with detected flags from User Agent string.
+
+### bowser.check(minVersions`:Object`, strictMode`:Boolean`, [ua]`:String`)`:Boolean`
+Use it to check if browser is supported. In default non-strict mode any browser family not present in `minVersions` will pass the
+ check (like Chrome in the third call in the sample bellow). When strict mode is enabled then any not specified browser family in
+ `minVersions` will cause `check` to return `false` (in the sample it is the fourth call, the last one).
+
+``` js
+/**
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.bowser.check" id="apidoc.element.bowser.bowser.check">
+        function <span class="apidocSignatureSpan">bowser.bowser.</span>check
+        <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function check(minVersions, strictMode, ua) {
+  return !isUnsupportedBrowser(minVersions, strictMode, ua);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### bowser`:Object`
+Use it to get object with detected flags of your current browser.
+
+### bowser._detect(ua `:String`)`:Object`
+Use it to get object with detected flags from User Agent string.
+
+### bowser.<span class="apidocCodeKeywordSpan">check</span>(minVersions`:Object`, strictMode`:Boolean`, [ua]`:String`)`:Boolean`
+Use it to check if browser is supported. In default non-strict mode any browser family not present in `minVersions` will pass the
+ check (like Chrome in the third call in the sample bellow). When strict mode is enabled then any not specified browser family in
+ `minVersions` will cause `check` to return `false` (in the sample it is the fourth call, the last one).
+
+``` js
+/**
+ * in case of using IE10
+ */
+bowser.check({msie: "11"});  // true
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.bowser.compareVersions" id="apidoc.element.bowser.bowser.compareVersions">
+        function <span class="apidocSignatureSpan">bowser.bowser.</span>compareVersions
+        <span class="apidocSignatureSpan">(versions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compareVersions(versions) {
+  // 1) get common precision for both versions, for example for "10.0" and "9" it should be 2
+  var precision = Math.max(getVersionPrecision(versions[0]), getVersionPrecision(versions[1]));
+  var chunks = map(versions, function (version) {
+    var delta = precision - getVersionPrecision(version);
+
+    // 2) "9" -&gt; "9.0" (for precision = 2)
+    version = version + new Array(delta + 1).join(".0");
+
+    // 3) "9.0" -&gt; ["000000000"", "000000009"]
+    return map(version.split("."), function (chunk) {
+      return new Array(20 - chunk.length).join("0") + chunk;
+    }).reverse();
+  });
+
+  // iterate in reverse order by reversed chunks array
+  while (--precision &gt;= 0) {
+    // 4) compare: "000000009" &gt; "000000010" = false (but "9" &gt; "10" = true)
+    if (chunks[0][precision] &gt; chunks[1][precision]) {
+      return 1;
+    }
+    else if (chunks[0][precision] === chunks[1][precision]) {
+      if (precision === 0) {
+        // all version chunks are same
+        return 0;
+      }
+    }
+    else {
+      return -1;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+ * but false in strict mode
+ */
+bowser.check({chrome: "45"}, true, window.navigator.userAgent); // false
+```
+
+### bowser.<span class="apidocCodeKeywordSpan">compareVersions</span>(versions`:Array&lt;String&gt;`)`:Number`
+Use it to compare two versions.
+
+``` js
+bowser.compareVersions(['9.0', '10']);
+// -1
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.bowser.isUnsupportedBrowser" id="apidoc.element.bowser.bowser.isUnsupportedBrowser">
+        function <span class="apidocSignatureSpan">bowser.bowser.</span>isUnsupportedBrowser
+        <span class="apidocSignatureSpan">(minVersions, strictMode, ua)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isUnsupportedBrowser(minVersions, strictMode, ua) {
+  var _bowser = bowser;
+
+  // make strictMode param optional with ua param usage
+  if (typeof strictMode === 'string') {
+    ua = strictMode;
+    strictMode = void(0);
+  }
+
+  if (strictMode === void(0)) {
+    strictMode = false;
+  }
+  if (ua) {
+    _bowser = detect(ua);
+  }
+
+  var version = "" + _bowser.version;
+  for (var browser in minVersions) {
+    if (minVersions.hasOwnProperty(browser)) {
+      if (_bowser[browser]) {
+        if (typeof minVersions[browser] !== 'string') {
+          throw new Error('Browser version in the minVersion map should be a string: ' + browser + ': ' + String(minVersions));
+        }
+
+        // browser version and min supported version.
+        return compareVersions([version, minVersions[browser]]) &lt; 0;
+      }
+    }
+  }
+
+  return strictMode; // not found
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Use it to compare two versions.
+
+``` js
+bowser.compareVersions(['9.0', '10']);
+// -1
+```
+
+### bowser.<span class="apidocCodeKeywordSpan">isUnsupportedBrowser</span>(minVersions`:Object`, [strictMode]`:Boolean`, [ua]`:string
+`)`:Boolean`
+Use it to check if browser is unsupported.
+
+``` js
+bowser.isUnsupportedBrowser({msie: "10"}, window.navigator.userAgent);
+// true / false
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bowser.bowser.test" id="apidoc.element.bowser.bowser.test">
+        function <span class="apidocSignatureSpan">bowser.bowser.</span>test
+        <span class="apidocSignatureSpan">(browserList)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">test = function (browserList) {
+  for (var i = 0; i &lt; browserList.length; ++i) {
+    var browserItem = browserList[i];
+    if (typeof browserItem=== 'string') {
+      if (browserItem in bowser) {
+        return true;
+      }
+    }
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function getSecondMatch(regex) {
+  var match = ua.match(regex);
+  return (match &amp;&amp; match.length &gt; 1 &amp;&amp; match[2]) || '';
+}
+
+var iosdevice = getFirstMatch(/(ipod|iphone|ipad)/i).toLowerCase()
+  , likeAndroid = /like android/i.<span class="apidocCodeKeywordSpan">test</span>(ua)
+  , android = !likeAndroid &amp;&amp; /android/i.test(ua)
+  , nexusMobile = /nexus\s*[0-6]\s*/i.test(ua)
+  , nexusTablet = !nexusMobile &amp;&amp; /nexus\s*[0-9]+/i.test(ua)
+  , chromeos = /CrOS/.test(ua)
+  , silk = /silk/i.test(ua)
+  , sailfish = /sailfish/i.test(ua)
+  , tizen = /tizen/i.test(ua)
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
